@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <style>
+            .div i {
+                margin-left: -30px;
+                padding-top: 10px;
+                cursor: pointer;
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="div">
+        <input type="password" id="input">
+        <i class="Show fa-solid fa-eye fa-xs" id="eye"></i>
+    </div>
+
+
+    <!-- <i class="Hide fa-solid fa-eye-slash"></i> -->
+
+    </a>
+
+    <script>
+        $(document).ready(
+            function fnPassword() {
+
+                $('#eye').click(function fnPassword() {
+
+                    if ($(this).hasClass('fa-eye')) {
+                        $(this).removeClass('fa-eye')
+                        $(this).addClass('fa-eye-slash')
+                        $('#input').attr('type', 'text')
+
+
+                    } else {
+                        $('#input').attr('type', 'password')
+                        $(this).removeClass('fa-eye-slash')
+                        $(this).addClass('fa-eye')
+                    }
+                })
+
+            }
+        )
+    </script>
+</body>
+
+</html>

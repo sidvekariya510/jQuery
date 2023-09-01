@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- bx slider CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
+        integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+        integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <style type="text/css">
+        #bx-pager {
+            text-align: center;
+            margin-top: -30px;
+        }
+
+        #bx-pager a {
+            margin: 0 3px;
+        }
+
+        #bx-pager a img {
+            padding: 3px;
+            border: solid #ccc 1px
+        }
+
+        #bx-pager a.active img {
+            border: solid #5280DD 1px;
+        }
+    </style>
+
+    <ul class="bxslider">
+        <li><img src="images/effieltower.jpg" class="img-fluid" /></li>
+        <li><img src="images/bustoy.JPG" class="img-fluid" /></li>
+        <li><img src="images/7stones.jpg" class="img-fluid" /></li>
+    </ul>
+
+    <div id="bx-pager">
+        <a data-slide-index="0" href=""><img src="images/effieltower.jpg" style="width: 75px;" /></a>
+        <a data-slide-index="1" href=""><img src="images/bustoy.JPG" style="width: 75px;" /></a>
+        <a data-slide-index="2" href=""><img src="images/7stones.jpg" style="width: 75px;" /></a>
+    </div>
+
+
+
+    <script>
+        $('.bxslider').bxSlider({
+            pagerCustom: '#bx-pager',
+            auto: true,
+        });
+    </script>
+</body>
+
+</html>
